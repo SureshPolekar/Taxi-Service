@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+.navbar a
+{
+    color: black;
+    font-weight: bold;
+    transition: all 0.13s;
+    opacity: 0;
+}
+.navbar a:hover
+{
+    color: gold;
+    background-color: black;
+    padding: 0px 3px;
+    border-radius: 3px;
+}
+#home {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.56),  rgba(0, 0, 0, 0)), 
+                url("car1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#fastw
+{
+    display: inline-block;
+    position: relative;
+}
+#rw{
+    display: inline-block;
+    position: relative;
+}
+#fastw::before
+{
+    content: '';
+    height: 5px;
+    width: 100%;
+    background-color: gold;
+    position: absolute;
+    bottom: 0;
+    border-radius: 4px;
+}
+#rw::before
+{
+    content: '';
+    height: 5px;
+    width: 100%;
+    background-color: gold;
+    position: absolute;
+    bottom: 0;
+    border-radius: 4px;
+}
+.hero{
+    height: auto;
+    width: auto;
+    padding: 10px 0px;
+    background-color: transparent;
+}
+.hero h1{
+    font-weight: bolder;    
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+.hero p{
+    font-weight: bolder;    
+    text-align: center;
+    color:white;
+    font-size: large;
+    padding: 5px 5px;
+}
+
+.BookBtn{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: gold;
+    height: auto;
+    width: auto;
+    padding: 5px 20px;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    overflow: hidden;
+    z-index: 1;
+    border: none;
+    outline: 1px solid gold;
+    transition: all 0.1s;
+    opacity: 0;
+}
+.BookBtn::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    top: 0;
+    left: -90%;
+    z-index: -1;
+    border-radius: 25px;
+    transition: all 0.15s;
+}
+.BookBtn:hover::before{
+    top: 0;
+    left:0%;
+}
+.BookBtn:hover{
+    color: gold;
+}
+
+#services
+{
+    height: auto;
+    width: 100vw;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px;
+}
+#services h1{
+    font-weight: bolder;
+}
+.services-list
+{
+    margin: 30px 0px;
+    background-color: transparent;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+    flex-wrap: wrap;
+    opacity: 1;
+}
+.service{
+    height: 420px;
+    width: 320px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.service p{
+    text-align: center;
+}
+.service h3
+{
+    font-weight: bolder;
+}
+.airport
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("airport.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.city
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("city.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.tourist
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("beach.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.more
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("eg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#book
+{
+    height: auto;
+    width: 100vw;
+    color: white;
+    background-color: black;
+    flex-direction: column;
+    padding: 30px 0px;
+    position: relative;
+}
+#book h2{
+    font-weight: bolder;
+}
+#book div form button
+{
+    background-color: gold;
+    width: 100%;
+    font-weight: bold;
+}
+#book div form button:hover
+{
+    color: black;
+    background-color: rgb(203, 176, 23);
+}
+
+#contact
+{
+    height: auto;
+    width: 100vw;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px;
+}
+
+#contact h2
+{
+    font-weight: bolder;
+}
+.contactways{
+    height: 50px;
+    width: 300px;
+    background-color: gold;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+footer
+{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+footer marquee
+{
+    height: 50px;
+    width: 100vw;
+    background-color: gold;
+    color: black;
+    font-style: italic;
+    font-size: 35px;
+    font-weight: bolder;
+}
