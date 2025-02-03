@@ -10,7 +10,7 @@ function sendEmail(e) {
     emailjs.send("service_1tlzugi", "template_qn88lxv", params).then(alert("Email sent!!"));
 }
 
-gsap.registerPlugin(ScrollTrigger);
+/*gsap.registerPlugin(ScrollTrigger);
 
 navtimeline = gsap.timeline();
 
@@ -131,4 +131,4 @@ gsap.from("#booktdash", {
         end: "top 20%",
         scrub: true,
     }
-});
+});*/
